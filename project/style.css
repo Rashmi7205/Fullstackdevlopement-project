@@ -1,0 +1,264 @@
+/* CSS file of the current project */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(31, 34, 37, 0.903);
+}
+/* For smaller devices */
+@media screen and (max-width:400px)
+{
+
+    .header{
+        width:100%;
+        height: 20px;
+        color: #fff;
+    }
+    .nav--bar{
+        width: 20px;
+        height: 100%;
+        margin:10px 10px;
+        background-image: url(./assets/hambrger.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        float: left;
+    }
+    .nav--bar ul{
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-transform: capitalize;
+    }
+    .nav--bar ul li
+    {
+        font-size: 8px;
+        padding:5px;
+        visibility: hidden;
+    }
+    .nav--bar ul li:first-child
+    {
+        background-color: rgb(127, 180, 255);
+        border-radius: 10px;
+    }
+    .landing--section
+    {
+        height: 330px;
+        width:70%;
+        margin:0 auto;
+        color: #fff;
+        display: flex;  
+        flex-direction: column;  
+    }
+    .landing--section img
+    {
+        width:70%;
+        height: auto;
+    }
+    .landing-text 
+    {
+        width: 90%;
+        height: 30%;
+        text-align: justify;
+        padding: 10px 0px;
+    }
+    .landing-text h3
+    {
+        font-size: 12px;
+    }
+
+    .landing-text img
+    {
+        width:30px;
+        height: auto;
+    }
+    .project--section{
+        height: 700px;
+        font-size: 16px;
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(1,150px);
+        grid-template-rows: repeat(4,170px);
+        grid-gap: 10px;
+        justify-content: center;
+
+    }
+    #pr-title
+    {
+        width:100px;
+        margin:0 auto;
+        text-transform: capitalize  ;
+        font-size: 24px;
+        padding:5px;
+        color:#fff;
+        border-bottom: 3px solid #085ce2;
+    }
+    .project--item
+    {
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .project--item img
+    {
+        width:100%;
+        height: 95%;
+    }
+    .footer-section{
+        width:200px;
+        height: 50px;
+        margin:20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer-heading
+    {
+        width:100px;
+        text-transform: capitalize  ;
+        font-size: 16px;
+        padding:5px;
+        color:#fff;
+        border-bottom: 3px solid #085ce2; 
+    }
+    .social--links{
+        width:70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .social--links img
+    {
+        width:15px;
+        height: auto;
+    }
+
+}
+/* For large devices */
+@media  screen and (min-width:400px)
+{
+    .header{
+        width:100%;
+        height: 20px;
+        color: #fff;
+    }
+    .nav--bar{
+        width: 200px;
+        height: 100%;
+        float: right;
+    }
+    .nav--bar ul{
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-transform: capitalize;
+    }
+    .nav--bar ul li
+    {
+        font-size: 8px;
+        padding:5px;
+    }
+    .nav--bar ul li:first-child
+    {
+        background-color: rgb(127, 180, 255);
+        border-radius: 10px;
+    }
+    .landing--section
+    {
+        height: 330px;
+        width:70%;
+        margin:0 auto;
+        color: #fff;
+        display: flex;    
+    }
+    .landing--section img
+    {
+        width:70%;
+        height: auto;
+    }
+    .landing-text 
+    {
+        width: 36%;
+        height: 100%;
+        text-align: justify;
+        padding: 10px 0px;
+    }
+    .landing-text h3
+    {
+        font-size: 12px;
+    }
+
+    .landing-text img
+    {
+        width:30px;
+        height: auto;
+    }
+    .project--section{
+        height: 350px;
+        font-size: 16px;
+        color: #fff;
+        display: grid;
+        grid-template-columns: repeat(2,150px);
+        grid-template-rows: repeat(2,170px);
+        grid-gap: 10px;
+        justify-content: center;
+
+    }
+    #pr-title
+    {
+        width:100px;
+        margin:0 auto;
+        text-transform: capitalize  ;
+        font-size: 24px;
+        padding:5px;
+        color:#fff;
+        border-bottom: 3px solid #085ce2;
+    }
+    .project--item
+    {
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .project--item img
+    {
+        width:100%;
+        height: 95%;
+    }
+    .footer-section{
+        width:200px;
+        height: 50px;
+        margin:20px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer-heading
+    {
+        width:100px;
+        text-transform: capitalize  ;
+        font-size: 16px;
+        padding:5px;
+        color:#fff;
+        border-bottom: 3px solid #085ce2; 
+    }
+    .social--links{
+        width:70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .social--links img
+    {
+        width:15px;
+        height: auto;
+    }
+}
