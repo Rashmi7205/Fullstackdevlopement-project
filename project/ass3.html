@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+            text-align: center;
+            font-size:2.3em;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+<script>
+    let col1 = prompt('Enter first color')
+    let col2 = prompt('Enter second color')
+    let x = 'invalid'
+
+    if(col1 == 'red' && col2 == 'blue')
+        x = 'purple'
+    if(col1 == 'red' && col2 == 'yellow')
+        x = 'orange'
+    if(col1 == 'blue' && col2 == 'yellow')
+        x = 'green'
+
+    switch(x){
+        case 'purple':
+            {
+            document.bgColor=x
+            document.write(x)
+        }
+        break;
+        case 'orange':
+            {
+            document.bgColor=x
+            document.write(x)
+        }
+        break;
+        case 'green':
+            {
+            document.bgColor=x
+            document.write(x)
+        }
+        break;
+        default:
+            document.write('Invalid color')
+    }
+
+</script>
+</html>

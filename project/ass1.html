@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password validator</title>
+    <style>
+      body{
+        background-color: #244939a7;
+      }
+      .container {
+        width: 350px;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 10px 20px 30px #000;
+        color:#fff;
+        font-size: 1.2em;
+        background-color: rgb(54, 136, 207);
+        margin:100px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      input{
+        width:100%;
+        height: 20px;
+      }
+      #submit{
+        width:80%;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 1em;
+        color: #fff;
+        font-weight: 400;
+        border: none;
+        background-color:#2dac2d ;
+      }
+    </style>
+  </head>
+  <body>
+      <form class="container">
+        <label>Enter Password<input type="password" id="enteredPassword" /> </label>
+        <label> Confirm Password  <input type="password" id="confirmedPassword" /> </label>
+        <button id="submit">Submit</button>
+    </div>
+    
+  </body>
+  <script>
+  
+    let enteredPassword = document.getElementById('enteredPassword');
+    let confirmedPassword = document.getElementById('confirmedPassword');
+    let Submit = document.getElementById('submit');
+    Submit.onclick = () =>{
+        if(enteredPassword.value==confirmedPassword.value)
+          confirm("Password reset successful");
+        else
+          confirm('Sorry Password didn\'t match')  
+    }
+</script>
+</html>

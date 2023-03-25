@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text change</title>
+    <style>
+        .conatainer{
+            width:150px;
+            height: 200px;
+            margin: 100px auto;
+            background-color: green;
+            color: aliceblue;
+            font-size: 1.2em;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        button{
+            width: 80%;
+            border: none;
+            color: white;
+            background-color: rgb(113, 182, 39);
+        }
+</style>
+</head>
+<body>
+    <div class="conatainer">
+        <div class="text">
+
+        </div><br>
+        <button id="btn">Click to Change</button>
+    </div>
+    <script>
+        
+        document.getElementById("btn").addEventListener('click',()=>{
+            let cont =document.querySelector(".conatainer .text").innerText;
+            if(cont === "The most affordable learning platform"){
+                document.querySelector(".conatainer .text").innerText = "PW Skills"
+            }
+            else
+                document.querySelector(".conatainer .text").innerText = "The most affordable learning platform"
+            }
+            )
+          
+    </script>
+</body>
+</html>
