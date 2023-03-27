@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>mouseover Event</title>
+    <style>
+        .container{
+            width:200px;
+            height: 100px;
+            background-color: yellow;
+            margin: 100px auto;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <button id="btn">Hover to show the box</button>
+</body>
+<script>
+    document.getElementById("btn").addEventListener('mouseover',()=>{
+        let box = document.querySelector(".container")
+        box.style.visibility = 'visible'
+    })
+</script>
+</html>

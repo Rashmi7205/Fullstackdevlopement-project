@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Onkeypress Event</title>
+    <style>
+        .container{
+            width:200px;
+            height: 100px;
+            background-color: yellow;
+            margin: 100px auto;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    </div>
+    <button id="btn">press key to show the box</button>
+</body>
+<script>
+    document.getElementById("btn").addEventListener('keypress',()=>{
+        let box = document.querySelector(".container")
+        box.style.visibility = 'visible'
+    })
+</script>
+</html>
