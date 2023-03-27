@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password valiadte</title>
+    <style>
+        .form{
+            width:350px;
+            height: 300px;
+            background-color: #5a5555d5;
+            color: rgb(255, 255, 255);
+            margin:  100px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form class="form"> 
+        <h1>Enter user name</h1>
+        <input type="text" id="username"/>
+        <h1>Enter password</h1>
+        <input type="password" id="password"/>
+        <p id="msg">The password field should have a minimum length of 8 characters.</p>
+        <button type="submit" onclick="validate()">Submit</button>
+    </form>
+    <script>
+        function validate()
+        {
+            let usrName = document.getElementById("username").value;
+            let pass =  document.getElementById("password").value;
+            let at = false 
+            for(let i=0;i<length;i++){
+                if(pass.charAt(i) == '@')
+                {
+                    console.log(pass.charAt(i))
+                    at = true
+                    break
+                }
+            }
+            console.log(at)
+        }
+    </script>
+</body>
+</html>
